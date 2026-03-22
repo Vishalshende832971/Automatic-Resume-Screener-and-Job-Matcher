@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 def mount_frontend(app: FastAPI) -> None:
     frontend_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "..", "..", "frontend")
+        os.path.join(os.path.dirname(__file__), "..", "frontend")
     )
 
     if os.path.exists(frontend_path):
